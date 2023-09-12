@@ -108,7 +108,13 @@ table tbody tr td {
   text-transform: capitalize;
   font-size: 16px;
 }
+.cse-peramukto tbody tr:last-child td {
+  border-left: 1px solid gray;
+}
 
+.cse-peramukto tbody tr:nth-last-child(2) td {
+  border-left: 1px solid gray;
+}
 @media screen and (max-width: 991px) {
   .dept-cse {
     flex-direction: column;
