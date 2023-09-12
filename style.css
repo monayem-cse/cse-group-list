@@ -1,5 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-size: 16px;
+  font-weight: 400;
+  color: #222;
+}
+.cse-dept {
+  padding-top: 20px;
+}
 .cse-dept img {
   display: block;
+  max-width: 350px;
+  width: 100%;
+  object-fit: contain;
   margin-left: auto;
   margin-right: auto;
   background-position: center;
@@ -8,31 +33,101 @@
 }
 .group-list {
   text-align: center;
-  margin-top: -1%;
-  margin-bottom: 3%;
+  margin-top: 25px;
+  margin-bottom: 40px;
   font-family: "Barlow Condensed", sans-serif;
-  font-family: "Imbue", serif;
-  font-family: "Orbitron", sans-serif;
-  font-family: "Poppins", sans-serif;
+}
+.group-list h1 {
+  padding-bottom: 5px;
+  text-align: center;
+  color: #303188;
+  font-size: 32px;
+  text-transform: capitalize;
 }
 .cse-list {
-  margin-left: 5%;
+  margin-left: 20px;
 }
 .dept-cse {
   display: flex;
+  justify-content: center;
+  max-width: 850px;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 50px;
 }
 .cse-peramoy {
-  margin-left: 5%;
-  font-family: "Barlow Condensed", sans-serif;
-  font-family: "Imbue", serif;
-  font-family: "Orbitron", sans-serif;
   font-family: "Poppins", sans-serif;
+  width: 100%;
+}
+.cse-peramukto {
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+}
+.cse-peramoy h1,
+.cse-peramukto h1 {
+  border: 1px solid gray;
+  border-bottom: none;
+  text-align: center;
+  padding: 10px;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 24px;
+  text-transform: capitalize;
+}
+.cse-peramukto h1 {
+  border-left: none;
+  padding-left: 20px;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+table tr td {
+  padding: 10px;
+  border: 1px solid gray;
+}
+table tr td:nth-child(1) {
+  width: 35%;
+  border-left: 0px;
+}
+table tr td:nth-child(2) {
+  width: 65%;
+}
+table thead tr th {
+  text-align: left;
+  border-right: 1px solid gray;
+  border-top: 1px solid gray;
+  padding: 10px;
+  font-size: 18px;
+}
+.cse-peramoy table tbody tr td:nth-child(1),
+.cse-peramoy table thead tr th:nth-child(1) {
+  border-left: 1px solid gray;
+}
+table tbody tr td {
+  font-weight: 500;
+  text-transform: capitalize;
+  font-size: 16px;
 }
 
-.cse-peramukto {
-  margin-left: 30%;
-  font-family: "Barlow Condensed", sans-serif;
-  font-family: "Imbue", serif;
-  font-family: "Orbitron", sans-serif;
-  font-family: "Poppins", sans-serif;
+@media screen and (max-width: 991px) {
+  .dept-cse {
+    flex-direction: column;
+    margin-bottom: 50px;
+    row-gap: 50px;
+  }
+  .cse-peramukto h1,
+  .cse-peramukto table tbody tr td:nth-child(1),
+  .cse-peramukto table thead tr th:nth-child(1) {
+    border-left: 1px solid gray;
+  }
+  .group-list h1 {
+    font-size: 28px;
+  }
+  .cse-peramoy h1,
+  .cse-peramukto h1 {
+    font-size: 20px;
+  }
+  table thead tr th {
+    font-size: 17px;
+  }
 }
