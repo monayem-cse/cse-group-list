@@ -10,7 +10,29 @@
   text-align: center;
   margin-top: -1%;
   margin-bottom: 3%;
+  font-family: "Barlow Condensed", sans-serif;
+  font-family: "Imbue", serif;
+  font-family: "Orbitron", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 .cse-list {
   margin-left: 5%;
+}
+.dept-cse {
+  display: flex;
+}
+.cse-peramoy {
+  margin-left: 5%;
+  font-family: "Barlow Condensed", sans-serif;
+  font-family: "Imbue", serif;
+  font-family: "Orbitron", sans-serif;
+  font-family: "Poppins", sans-serif;
+}
+
+.cse-peramukto {
+  margin-left: 30%;
+  font-family: "Barlow Condensed", sans-serif;
+  font-family: "Imbue", serif;
+  font-family: "Orbitron", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
