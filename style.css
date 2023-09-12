@@ -1,0 +1,16 @@
+.cse-dept img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.group-list {
+  text-align: center;
+  margin-top: -1%;
+  margin-bottom: 3%;
+}
+.cse-list {
+  margin-left: 5%;
+}
