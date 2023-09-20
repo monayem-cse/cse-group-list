@@ -50,6 +50,8 @@ body {
 .dept-cse {
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  row-gap: 80px;
   max-width: 850px;
   width: 100%;
   margin: 0 auto;
@@ -67,6 +69,7 @@ body {
 .cse-peramukto h1 {
   border: 1px solid gray;
   border-bottom: none;
+  border-left: 1px solid gray;
   text-align: center;
   padding: 10px;
   font-family: "Barlow Condensed", sans-serif;
@@ -74,7 +77,6 @@ body {
   text-transform: capitalize;
 }
 .cse-peramukto h1 {
-  border-left: none;
   padding-left: 20px;
 }
 table {
@@ -86,16 +88,19 @@ table tr td {
   border: 1px solid gray;
 }
 table tr td:nth-child(1) {
-  width: 35%;
-  border-left: 0px;
+  width: 10%;
 }
 table tr td:nth-child(2) {
+  width: 35%;
+}
+table tr td:nth-child(3) {
   width: 65%;
 }
 table thead tr th {
   text-align: left;
   border-right: 1px solid gray;
   border-top: 1px solid gray;
+  border-left: 1px solid gray;
   padding: 10px;
   font-size: 18px;
 }
